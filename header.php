@@ -36,7 +36,7 @@
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </div>
     </nav><!-- #site-navigation -->
-    
+
     <div class="vertical-row">
         <div class="vertical">
             <div class="site-head-content inner">
@@ -104,3 +104,5 @@
 </header><!-- #masthead -->
 
 <main id="content" class="content" role="main">
+ <div class="page-wrap">
+ 	<div class="left-content">

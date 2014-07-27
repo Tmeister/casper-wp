@@ -5,9 +5,12 @@
  * @package Casper
  */
 ?>
+	</div> <!-- #LEFT CONTENT -->
 	<div id="secondary" class="widget-area" role="complementary">
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : 
+		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) :
 			// Put default widgets here
 		endif; // end sidebar widget area ?>
 		<div class="clear">&nbsp;</div>
 	</div><!-- #secondary -->
+	<div class="clear">&nbsp;</div>
+</div> <!-- #page-wrap -->
