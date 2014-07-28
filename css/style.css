@@ -2238,6 +2238,8 @@ body.home .site-head:after
         height: auto;
         min-height: 240px;
         padding: 15% 0;
+
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
     }
     .blog-title
     {
