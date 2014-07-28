@@ -529,14 +529,14 @@ table
    ========================================================================== */
 html
 {
-    font-size: 62.5%;
+    font-size: 57%;
 
     height: 100%;
     max-height: 100%;
 }
 body
 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2.0rem;
     line-height: 1.6em;
 
@@ -566,7 +566,7 @@ h4,
 h5,
 h6
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1;
 
     margin-top: 0;
@@ -577,17 +577,11 @@ h1
 {
     font-size: 5rem;
     line-height: 1.2em;
-
-    text-indent: -3px;
-    letter-spacing: -2px;
 }
 h2
 {
     font-size: 4rem;
     line-height: 1.2em;
-
-    text-indent: -2px;
-    letter-spacing: -1px;
 }
 h3
 {
@@ -1081,7 +1075,7 @@ textarea
 --------------------------------------------------------------*/
 .main-navigation
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
     width: 100%;
     padding: 0;
@@ -1533,7 +1527,7 @@ body.home .site-head:after
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 5rem;
     font-weight: bold;
 
@@ -1545,7 +1539,7 @@ body.home .site-head:after
 }
 .blog-description
 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.5em;
@@ -1655,7 +1649,7 @@ body.home .site-head:after
 }
 .post-meta
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
 
     display: inline-block;
@@ -1880,10 +1874,12 @@ body.home .site-head:after
 /* Comments */
 .comments-area
 {
-    width: 80%;
-    max-width: 700px;
-    margin: 4rem auto;
+    width: 100%;
     padding-bottom: 4rem;
+}
+.comments-area .comment-list
+{
+    margin-left: 0;
 }
 .comment-form-comment label
 {
@@ -1893,7 +1889,7 @@ body.home .site-head:after
 }
 .form-allowed-tags
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
 
     float: right;
@@ -1911,14 +1907,14 @@ body.home .site-head:after
 }
 .form-submit #submit
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
 
     display: inline-block;
     float: left;
 
     max-width: 18%;
-    padding: 15px;
+    padding: 15px 5px;
 
     transition: border ease .3s;
     text-decoration: none;
@@ -1931,12 +1927,12 @@ body.home .site-head:after
 /* Main widget wrapper */
 .widget-area
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
     float: left;
 
-    width: 28%;
-    padding-left: 2%;
+    width: 27%;
+    padding-left: 3%;
 
     color: #9eabb3;
 }
@@ -1944,9 +1940,42 @@ body.home .site-head:after
 {
     font-size: 2.5rem;
 }
-.widget-area aside ul
+.widget-area aside
+{
+    border: 1px solid #ebf2f6;
+    border-bottom: 0 none;
+}
+.widget-area aside h1
+{
+    font-size: 1.2em;
+
+    margin-bottom: 0;
+    padding: 10px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ebf2f6;
+}
+.widget-area aside > ul
 {
     margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+.widget-area aside > ul li
+{
+    padding: 20px 10px;
+
+    border-bottom: 1px solid #ebf2f6;
+}
+.widget-area aside > ul li:hover
+{
+    background-color: #fafafa;
+}
+.widget-area aside > ul li a
+{
+    text-decoration: none;
 }
 .search-submit
 {
@@ -1969,7 +1998,7 @@ body.home .site-head:after
 }
 #main > header.page-header
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 
     width: 80%;
     max-width: 700px;
@@ -1998,7 +2027,7 @@ body.home .site-head:after
 /* The main wrapper for our pagination links */
 .pagination
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
 
     position: relative;
@@ -2055,7 +2084,7 @@ body.home .site-head:after
    ========================================================================== */
 .site-footer
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
 
@@ -2293,8 +2322,6 @@ body.home .site-head:after
     {
         font-size: 3rem;
         line-height: 1.1em;
-
-        letter-spacing: -1px;
     }
     h3
     {

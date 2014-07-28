@@ -62,4 +62,11 @@
 			?>
 		</section>
 	<?php endif; ?>
+	<footer class="post-footer">
+
+	    <section class="author">
+	        <h4><?php the_author_link(); ?></h4>
+	        <p><?php the_author_meta('description'); ?></p>
+	    </section>
+	</footer>
 </article><!-- #post-## -->
