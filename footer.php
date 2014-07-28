@@ -12,8 +12,8 @@
 		<div class="site-info inner">
 		    <section class="copyright">
 		    	<?php if(  false == get_theme_mod( 'casper_custom_footer') ) { ?>
-		    		<?php printf( __( '<a href="%1$s" rel="home">Casper WP</a> by Lacy Morrow', 'casper' ), esc_url( 'https://github.com/lacymorrow/casper-wp' ) ); ?>
-		    	<?php } else { echo get_theme_mod( 'casper_custom_footer'); } ?>
+		    		<?php printf( __( 'Theme based on <a href="%1$s" rel="home">Casper WP</a> by Lacy Morrow', 'casper' ), esc_url( 'https://github.com/lacymorrow/casper-wp' ) ); ?>
+		    	<?php } else { var_dump ( get_theme_mod( 'casper_custom_footer') ); } ?>
 		    </section>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

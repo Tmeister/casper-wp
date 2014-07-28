@@ -849,8 +849,7 @@ margin on the iframe, cause it breaks stuff. */
 {
     position: relative;
 
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 1em;
 }
@@ -1084,18 +1083,20 @@ textarea
 }
 .main-navigation div
 {
+    display: inline-block;
     overflow: hidden;
+
+    text-align: center;
 }
 .main-navigation > div
 {
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 .main-navigation ul
 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 
     float: right;
     overflow: hidden;
@@ -2000,8 +2001,7 @@ body.home .site-head:after
 {
     font-family: 'Raleway', sans-serif;
 
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 
@@ -2032,8 +2032,7 @@ body.home .site-head:after
 
     position: relative;
 
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
     margin: 4rem auto;
 
     text-align: center;
