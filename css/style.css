@@ -850,6 +850,7 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
 
     width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
     padding-bottom: 1em;
 }
@@ -1787,14 +1788,14 @@ body.home .site-head:after
 }
 .post-footer h4
 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     margin: 0;
 }
 .post-footer p
 {
-    font-size: 1.4rem;
-    line-height: 1.6em;
+    font-size: 1.8rem;
+    line-height: 2em;
 
     margin: 1rem 0;
 }
@@ -1966,7 +1967,9 @@ body.home .site-head:after
 }
 .widget-area aside > ul li
 {
-    padding: 20px 10px;
+    font-size: .9em;
+
+    padding: 20px 20px;
 
     border-bottom: 1px solid #ebf2f6;
 }
@@ -2084,7 +2087,7 @@ body.home .site-head:after
 .site-footer
 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.7em;
 
     position: relative;

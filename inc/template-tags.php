@@ -58,7 +58,7 @@ function casper_post_nav() {
 		<div class="nav-links">
 			<?php
 				previous_post_link( '<div class="older-posts">%link</div>', _x( '%title <span class="meta-nav">&rarr;</span>', 'Previous post link', 'casper' ) ); ?>
-				<div class="page-number">&bull;</div>
+				<div class="page-number"></div>
 				<?php next_post_link(     '<div class="newer-posts">%link</div>',     _x( '<span class="meta-nav">&larr;</span> %title', 'Next post link',     'casper' ) );
 			?>
 		</div><!-- .nav-links -->
