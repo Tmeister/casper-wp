@@ -2221,6 +2221,25 @@ body.home .site-head:after
 
     opacity: 1;
 }
+.gform_wrapper input[type=text],
+.gform_wrapper input[type=url],
+.gform_wrapper input[type=email],
+.gform_wrapper input[type=tel],
+.gform_wrapper input[type=number],
+.gform_wrapper input[type=password]
+{
+    font-size: 16px;
+
+    padding: 10px;
+}
+.gform_wrapper .top_label input.large,
+.gform_wrapper .top_label select.large,
+.gform_wrapper .top_label textarea.textarea
+{
+    font-size: 16px;
+
+    padding: 10px;
+}
 /* ==========================================================================
    9. Media Queries - Smaller than 900px
    ========================================================================== */
