@@ -1127,9 +1127,7 @@ body.home .site-head:after {
 .post-content img {
     display: block;
     max-width: 100%;
-    margin: 0 auto;
     height: auto;
-    padding: 1em;
 }
 
 /* The author credit area after the post */
@@ -1147,13 +1145,12 @@ body.home .site-head:after {
 
 .post-footer p {
     margin: 1rem 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2em;
 }
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
     margin-bottom: 3rem;
 }
 
@@ -1219,8 +1216,56 @@ body.home .site-head:after {
 .comments-area {
     width:100%;
     padding-bottom: 4rem;
+    .depth-1{ margin-left: 20px;}
+    .depth-2{ margin-left: 30px;}
+    .depth-3{ margin-left: 40px;}
+    .depth-4{ margin-left: 50px;}
+    .depth-5{ margin-left: 60px;}
+    .depth-6{ margin-left: 70px;}
+    .depth-7{ margin-left: 80px;}
+    .depth-8{ margin-left: 90px;}
+    .depth-9{ margin-left: 100px;}
+    .depth-10{ margin-left: 110px;}
     .comment-list{
 		margin-left: 0px;
+		padding-left: 0px;
+		list-style-type: none;
+		& > .comment{
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius: 4px;
+			background: #fcfcfc;
+			padding: 10px 20px 10px 20px;
+			border: 1px solid #e3e3e3;
+			margin: 20px 0 20px 0;
+		}
+		a{
+			text-decoration: none;
+			font-weight: 700;
+			color:rgba(0,0,0,.35);
+		}
+	}
+	.comment-author{
+		.avatar{
+			float: left;
+			img{
+				padding: 8px;
+				border: 1px solid #e3e3e3;
+				margin-right: 10px;
+			}
+		}
+		cite{
+			display:block;
+			font-style: normal;
+		}
+	}
+	.comment-content{
+		clear:both;
+		margin-top: 30px;
+		text-align: justify;
+	}
+	blockquote{
+		margin: 1.6em 0 1.6em 1.6em;
 	}
 }
 
@@ -1233,7 +1278,7 @@ body.home .site-head:after {
     width:80%;
     float: right;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #9EABB3;
     margin: -1rem;
 }
@@ -1261,8 +1306,8 @@ body.home .site-head:after {
 /* Main widget wrapper */
 .widget-area {
     float: left;
-	width: 27%;
-	padding-left: 3%;
+	width: 28%;
+	padding-left: 2%;
     font-family: 'Raleway', sans-serif;
     color: #9EABB3;
 }
@@ -1346,7 +1391,7 @@ body.home .site-head:after {
     width: 100%;
     margin: 4rem auto;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #9EABB3;
     text-align: center;
 }
@@ -1510,6 +1555,44 @@ body.home .site-head:after {
 .gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large, .gform_wrapper .top_label textarea.textarea{
 	font-size: 16px;
 	padding: 10px;
+}
+
+.more-link{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+	&:before{
+		position: absolute;
+		height: 1px;
+		background: rgba(0,0,0,.25);
+		content: " ";
+		width: 100%;
+		top: 15px;
+		left:0;
+		z-index: 1;
+	}
+	span{
+		color: rgba(0,0,0,.25);
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
+		background: white;
+		padding: 0 20px;
+		z-index: 2;
+		position: relative;
+	}
+	&:hover{
+		span{
+			color: rgba(0,0,0,.5);
+		}
+	}
+}
+.wp-caption img[class*=wp-image-]{
+	margin: 0px;
+	padding: 0px;
+	max-width: 100%;
 }
 
 /* ==========================================================================

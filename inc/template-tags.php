@@ -131,3 +131,54 @@ function casper_category_transient_flusher() {
 }
 add_action( 'edit_category', 'casper_category_transient_flusher' );
 add_action( 'save_post',     'casper_category_transient_flusher' );
+
+
+if ( ! function_exists( 'custom_comments' ) ) :
+function custom_comments( $comment, $args, $depth ) {
+    $GLOBALS['comment'] = $comment;
+    switch ( $comment->comment_type ) :
+        case 'pingback' :
+        case 'trackback' :
+    ?>
+    <div class="post pingback">
+        <p><?php _e( 'Pingback:', 'shape' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'shape' ), ' ' ); ?></p>
+    <?php
+            break;
+        default :
+    ?>
+    <div <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+        <article id="comment-<?php comment_ID(); ?>" class="comment">
+            <footer>
+                <div class="comment-author vcard">
+                	<span class="avatar">
+                    	<?php echo get_avatar( $comment, 80 ); ?>
+                    </span>
+                    <span class="meta">
+                    	<?php printf( __( '%s', 'shape' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+                    	<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+	                    <?php
+	                        /* translators: 1: date, 2: time */
+	                        printf( __( '%1$s at %2$s', 'shape' ), get_comment_date(), get_comment_time() ); ?>
+	                    </time></a>
+	                    <?php edit_comment_link( __( '(Edit)', 'shape' ), ' ' );
+	                    ?>
+                    </span>
+                </div><!-- .comment-author .vcard -->
+                <?php if ( $comment->comment_approved == '0' ) : ?>
+                    <em><?php _e( 'Your comment is awaiting moderation.', 'shape' ); ?></em>
+                    <br />
+                <?php endif; ?>
+            </footer>
+
+            <div class="comment-content"><?php comment_text(); ?></div>
+
+            <div class="reply">
+                <?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+            </div><!-- .reply -->
+        </article><!-- #comment-## -->
+
+    <?php
+            break;
+    endswitch;
+}
+endif; // ends check for shape_comment()

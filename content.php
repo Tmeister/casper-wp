@@ -31,7 +31,7 @@
 	    </section><!-- .entry-summary -->
 	<?php else : ?>
 		<section class="post-content">
-		    <?php the_excerpt();//the_content( __( '&hellip;&nbsp;<span class="meta-nav">&rarr;</span>', 'casper' ) ); ?>
+		    <?php the_content( __( '<span class="meta-nav">Read More</span>', 'casper' ) ); ?>
 		    <?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . __( 'Pages:', 'casper' ),
