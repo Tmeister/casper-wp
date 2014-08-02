@@ -1357,6 +1357,7 @@ textarea
 .hentry
 {
     margin: 0 0 1.5em;
+    padding-right: 20px;
 }
 .byline,
 .updated
@@ -1558,7 +1559,7 @@ body.home .site-head:after
 {
     position: relative;
 
-    max-width: 70%;
+    max-width: 69%;
 
     word-break: break-word;
 }
@@ -2021,8 +2022,8 @@ body.home .site-head:after
 
     float: left;
 
-    width: 28%;
-    padding-left: 2%;
+    width: 30%;
+    padding-left: 1%;
 
     color: #9eabb3;
 }
