@@ -2460,6 +2460,18 @@ body.home .site-head:after
     {
         font-size: 2.8rem;
     }
+    .post-wrap,
+  .left-content
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    .widget-area
+    {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
 }
 /* ==========================================================================
    10. Media Queries - Smaller than 500px
@@ -2563,6 +2575,18 @@ body.home .site-head:after
         font-size: 1.1rem;
 
         margin-top: 6rem;
+    }
+    .post-wrap,
+  .left-content
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    .widget-area
+    {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
     }
 }
 /* ==========================================================================
