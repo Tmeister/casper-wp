@@ -529,14 +529,14 @@ table
    ========================================================================== */
 html
 {
-    font-size: 57%;
+    font-size: 55%;
 
     height: 100%;
     max-height: 100%;
 }
 body
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 2.0rem;
     line-height: 1.6em;
 
@@ -545,7 +545,7 @@ body
     height: 100%;
     max-height: 100%;
 
-    color: #3a4145;
+    color: #63676e;
 }
 ::-moz-selection
 {
@@ -566,7 +566,7 @@ h4,
 h5,
 h6
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     line-height: 1;
 
     margin-top: 0;
@@ -585,7 +585,8 @@ h2
 }
 h3
 {
-    font-size: 3.5rem;
+    font-family: 'museo-slab', serif;
+    font-size: 2.5rem;
 }
 h4
 {
@@ -607,7 +608,7 @@ a
 }
 a:hover
 {
-    color: #57a3e8;
+    color: #4abbed;
 }
 h1 a,
 h2 a,
@@ -674,12 +675,14 @@ blockquote
 }
 blockquote p
 {
+    font-family: 'museo-slab', serif;
     font-style: italic;
 
     margin: .8em 0;
 }
 blockquote small
 {
+    font-family: 'museo-slab', serif;
     font-size: .9em;
 
     display: inline-block;
@@ -694,6 +697,7 @@ blockquote small:before
 }
 blockquote cite
 {
+    font-family: 'museo-slab', serif;
     font-weight: bold;
 }
 blockquote cite a
@@ -1075,7 +1079,7 @@ textarea
 --------------------------------------------------------------*/
 .main-navigation
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
 
     width: 100%;
     padding: 0;
@@ -1363,6 +1367,14 @@ textarea
     margin: 0 0 1.5em;
     padding-right: 20px;
 }
+.hentry section a
+{
+    color: #4abbed !important;
+}
+.hentry section a:hover
+{
+    color: #4a4a4a !important;
+}
 .byline,
 .updated
 {
@@ -1534,7 +1546,7 @@ body.home .site-head:after
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 5rem;
     font-weight: bold;
 
@@ -1546,7 +1558,7 @@ body.home .site-head:after
 }
 .blog-description
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.5em;
@@ -1563,7 +1575,8 @@ body.home .site-head:after
 {
     position: relative;
 
-    max-width: 69%;
+    width: 69%;
+    max-width: 700px;
 
     word-break: break-word;
 }
@@ -1656,7 +1669,7 @@ body.home .site-head:after
 }
 .post-meta
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.5rem;
 
     display: inline-block;
@@ -1873,7 +1886,7 @@ body.home .site-head:after
 .blog-title a:hover,
 .social-icons a:hover
 {
-    color: #57a3e8;
+    color: #4abbed;
 }
 /* Comments */
 .comments-area
@@ -1974,6 +1987,8 @@ body.home .site-head:after
 }
 .comments-area blockquote
 {
+    font-family: 'museo-slab', serif;
+
     margin: 1.6em 0 1.6em 1.6em;
 }
 .comment-form-comment label
@@ -1984,7 +1999,7 @@ body.home .site-head:after
 }
 .form-allowed-tags
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.5rem;
 
     float: right;
@@ -2002,7 +2017,7 @@ body.home .site-head:after
 }
 .form-submit #submit
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.3rem;
 
     display: inline-block;
@@ -2022,11 +2037,12 @@ body.home .site-head:after
 /* Main widget wrapper */
 .widget-area
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
 
     float: left;
 
     width: 30%;
+    max-width: 300px;
     padding-left: 1%;
 
     color: #9eabb3;
@@ -2094,7 +2110,7 @@ body.home .site-head:after
 }
 #main > header.page-header
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
 
     width: 100%;
     margin: 0 auto;
@@ -2122,7 +2138,7 @@ body.home .site-head:after
 /* The main wrapper for our pagination links */
 .pagination
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.75rem;
 
     position: relative;
@@ -2178,7 +2194,7 @@ body.home .site-head:after
    ========================================================================== */
 .site-footer
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'proxima-nova', sans-serif;
     font-size: 1.5rem;
     line-height: 1.7em;
 

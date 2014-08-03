@@ -19,7 +19,7 @@
 
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,600' rel='stylesheet' type='text/css'>
+
 <?php wp_head(); ?>
 </head>
 
